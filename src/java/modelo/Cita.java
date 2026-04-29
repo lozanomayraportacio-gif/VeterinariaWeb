@@ -1,6 +1,8 @@
 package modelo;
 
+// Clase que representa la entidad Cita en el sistema veterinario
 public class Cita {
+
     private int id;
     private int mascota_id;
     private int propietario_id;
@@ -9,9 +11,10 @@ public class Cita {
     private String hora;
     private String motivo;
 
-    public Cita() {
-    }
+    // Constructor vacío
+    public Cita() {}
 
+    // Constructor con parámetros
     public Cita(int id, int mascota_id, int propietario_id, int veterinario_id,
                 String fecha, String hora, String motivo) {
         this.id = id;
@@ -23,6 +26,7 @@ public class Cita {
         this.motivo = motivo;
     }
 
+    // Getters y Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 
